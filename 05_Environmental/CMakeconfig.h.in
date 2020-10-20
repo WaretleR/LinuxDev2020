@@ -1,0 +1,2 @@
+#cmakedefine KEYPAD ${KEYPAD}
+#cmakedefine WITHOUT_UTF ${WITHOUT_UTF}
