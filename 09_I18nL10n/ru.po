@@ -1,0 +1,52 @@
+# Number guessing.
+# Copyright (C) 2020
+# This file is distributed under the same license as the guess package.
+# Alexander <aleksander.dimit@gmail.com>, 2020.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version:  09_I18nL10n\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-11-15 21:45+0300\n"
+"PO-Revision-Date: 2020-11-15 21:20+0300\n"
+"Last-Translator: Alexander <aleksander.dimit@gmail.com>\n"
+"Language-Team: Russian\n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+#: guess.c:17
+#, c-format
+msgid "Choose a nummber in range [%d, %d]: "
+msgstr "Загадайте число из промежутка [%d, %d]: "
+
+#: guess.c:19
+#, c-format
+msgid "Wrong number!\n"
+msgstr "Неверное число!\n"
+
+#: guess.c:24
+#, c-format
+msgid "Is your number greater than %d?\n"
+msgstr "Выбранное вами число больше чем %d?\n"
+
+#: guess.c:27 guess.c:38
+#, c-format
+msgid "Wrong answer! Try again.\n"
+msgstr "Неправильный ответ! Попробуйте еще раз.\n"
+
+#: guess.c:31
+msgid "yes"
+msgstr "да"
+
+#: guess.c:34
+msgid "no"
+msgstr "нет"
+
+#: guess.c:44
+#, c-format
+msgid "Your chosen number = %d!\n"
+msgstr "Выбранное вами число = %d!\n"
