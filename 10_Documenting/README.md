@@ -1,4 +1,3 @@
-Реал
 ## Сборка
 ```
 autoreconf -fisv && ./configure && make
@@ -11,6 +10,7 @@ make doxygen-doc
 ```
 ./guess --help
 ```
+man файл - guess.1
 ## Удаление генератов
 ```
 make clean

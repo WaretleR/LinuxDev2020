@@ -13,7 +13,7 @@
  */
 #define _(STRING) gettext(STRING)
 
-#define HELP _("Number guessing program.\n\n\
+#define MANUAL _("Number guessing program.\n\n\
 Usage: guess [OPTION]\n\
 Numbers can be typed in roman digits by passing -r option.\n\
 Program supports english and russian languages.\n\
@@ -61,6 +61,10 @@ const char *get_roman(int arabic) {
 }
 
 int main(int argc, char **argv) {
+    setlocale(LC_ALL, "");
+    bindtextdomain("guess", ".");
+    textdomain("guess");
+
     char is_roman = 0;
 
     for (int i = 1; i < argc; ++i) {
@@ -68,13 +72,12 @@ int main(int argc, char **argv) {
             is_roman = 1;
         }
         if (strcmp(argv[i], "--help") == 0) {
-            return !printf("%s",  HELP);
+            return !printf("%s",  MANUAL);
+        }
+        if (strcmp(argv[i], "--version") == 0) {
+            return !printf("1.0");
         }
     }
-
-    setlocale(LC_ALL, "");
-    bindtextdomain("guess", ".");
-    textdomain("guess");
 
     int chosen;
     int left = 1, right = 100, middle;
